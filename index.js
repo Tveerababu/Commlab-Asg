@@ -10,17 +10,17 @@ function closePopup() {
     popup.style.display = 'none';
 }
 function saveDetails() {
-    var firstName = document.getElementById('firstName').value;
-    var lastName = document.getElementById('lastName').value;
-    var email = document.getElementById('email').value;
-    var phone = document.getElementById('number').value;
+    let firstName = document.getElementById('firstName').value;
+    let lastName = document.getElementById('lastName').value;
+    let email = document.getElementById('email').value;
+    let phone = document.getElementById('number').value;
+
 
     var errorFirstName = document.getElementById('errorFirstName');
     var errorLastName = document.getElementById('errorLastName');
     var errorEmail = document.getElementById('errorEmail');
     var errorPhone = document.getElementById('errorPhone');
 
-    
     errorFirstName.textContent = '';
     errorLastName.textContent = '';
     errorEmail.textContent = '';
@@ -44,11 +44,11 @@ function saveDetails() {
     if (!phone) {
         errorPhone.textContent = 'Please enter a Phone number.';
     }
- 
-    if (errorFirstName.textContent || errorLastName.textContent || errorEmail.textContent || errorPhone.textContent) {
+    if(!firstName || !lastName || !email || !phone){
+        alert("Some Field Missed")
+    }
+    if ((errorFirstName.textContent || errorLastName.textContent || errorEmail.textContent || errorPhone.textContent).length > 0){
         return; // Exit the function to prevent further processing
     }
-
-
     closePopup();
 }

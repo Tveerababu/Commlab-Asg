@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width">
     <title>CommLab</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <link rel="icon" type="image/x-icon" href="comlab.png">
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/89bcd19c32.js" crossorigin="anonymous"></script>
 </head>
@@ -15,7 +14,6 @@
         <div class="para-head-cart">
             <h2 class="paragraph">"Some people call this artificial intelligence, but the reality is this technology will enhance us. So, instead of artificial intelligence, I think we’ll augment our intelligence” - Ginni Rometty – Former CEO & President, IBM</h2>
         </div>  
-
         <div class="img-texture-cart">
             <div class="host-logo">
             <img class="hostImg" src="https://resources.commlabindia.com/hs-fs/hubfs/webinars/corporate-training-with-ai-banner-image.png?width=525&height=734&name=corporate-training-with-ai-banner-image.png" alt="">
@@ -136,34 +134,36 @@
         </div>
         <div class="popup">
             <div class="popup-content">
-                <span class="close-button" onclick="closePopup()">&times;</span>
-                <h2>Rigister for the Free webinar</h2>
+                <span class="close-button" onclick="closePopup()"><i class="fa-solid fa-right-from-bracket" alt="X"></i></span>
+                <h2 class="blink">Rigister for the Free webinar</h2>
                 <div class="first-last-cart">
                     <div class="firstname-cart">
-                    <label for ='firstname'>FirstName<span class="star-symbol">*</span></label>
+                    <label for ='firstname'>FirstName <span class="star-symbol"> *</span></label>
                     <input class="custom-input first-name-input" type="text" id="firstName" placeholder="First Name"/>
                     <div id="errorFirstName" class="error-message"></div>
                     </div>
                 
                     <div class="lastname-cart">
-                    <label for ='lasttname'>LasttName<span class="star-symbol">*</span></label>
+                    <label for ='lasttname'>LastName <span class="star-symbol"> *</span></label>
                     <input class="last-name-input" type="text" id="lastName" placeholder="Last Name" />
                     <div id="errorLastName" class="error-message"></div>
                     </div>
                 </div>
 
                 <br />
-                <label for ='email'>Email<span class="star-symbol">*</span></label>
+                <label for ='email'>Email <span class="star-symbol"> *</span></label>
                 <br />
                 <input class="email" type="email" id="email" placeholder="Business Email"/>
                 <div id="errorEmail" class="error-message"></div>
                 <br />
-                <label for ='number'>Phone number<span class="star-symbol">*</span></label>
+                <label for ='number'>Phone number <span class="star-symbol"> *</span></label>
                 <br />
                 <input class="phone-num" type="text" id="number" placeholder="Phone Number"/>
                 <div id="errorPhone" class="error-message"></div>
                 <br />
-                <button class="secure-seat-btn" type="button" onclick="saveDetails()">Secure  Your seat</button>
+                <div class="secure-div">
+                    <button class="seat-btn" type="button" onclick="saveDetails()">Secure  Your seat</button>
+                </div>
             </div>
         </div>
 
